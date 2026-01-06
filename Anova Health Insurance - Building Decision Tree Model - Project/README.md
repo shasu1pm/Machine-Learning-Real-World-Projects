@@ -1,15 +1,15 @@
-# 🏥 Anova Health Insurance – Building a Decision Tree Model
-### 🌳 Explainable Machine Learning for Insurance Risk Analytics
+# 🏥 Anova Health Insurance – **Building a Decision Tree Model**
+### 🌳 **Decision Tree** | Explainable Machine Learning for Insurance Risk Analytics
 
 ---
 
 ## 📌 Project Overview
 
-**Project Name:** 🏥 **Anova Insurance Health Risk Prediction**  
+**Project Name:** 🏥 **Anova Health Insurance – Building a Decision Tree Model**  
 **Domain:** 💼 Health Insurance | 📊 Risk Analytics  
 **Model Type:** 🤖 Supervised Machine Learning  
 **Task:** 🧩 **Binary Classification**  
-**Algorithm:** 🌳 **Decision Tree**  
+**Algorithm:** 🌳 **Decision Tree Model**  
 **Explainability:** 🔍 **High (Business-friendly, rule-based)**
 
 ---
@@ -21,7 +21,7 @@ Anova Insurance aims to **optimize health insurance eligibility and premium pric
 
 ### 🔑 Key Business Decisions
 - ✅ Insurance eligibility approval  
-- 💰 Premium pricing (standard vs risk-adjusted)
+- 💰 Premium pricing *(standard vs risk-adjusted)*
 
 ### ⚠️ Risk Focus
 - 🚫 Avoid underpricing high-risk applicants  
@@ -33,7 +33,7 @@ Anova Insurance aims to **optimize health insurance eligibility and premium pric
 ## 🎯 Problem Statement
 
 ### Objective
-Build a predictive model that classifies individuals as:
+Build a **Decision Tree classification model** that classifies individuals as:
 
 - 🟢 **Healthy (0)**
 - 🔴 **Unhealthy (1)**
@@ -50,7 +50,7 @@ using **health, lifestyle, and medical attributes**.
 
 ## 🗂️ Dataset Overview
 
-**Source:** 🗂️ Anova Insurance (Synthetic / Training Dataset)
+**Source:** 🗂️ Anova Insurance *(Synthetic / Training Dataset)*
 
 **Shape**
 - **Rows:** 10,000  
@@ -63,9 +63,9 @@ using **health, lifestyle, and medical attributes**.
 - `1` → 🔴 Unhealthy  
 
 ### ❗ Data Challenges
-- ❗ Missing values (especially for older individuals)
+- ❗ Missing values *(especially for older individuals)*
 - ❌ Negative age values
-- 🔄 Mixed feature types (numeric, ordinal, nominal)
+- 🔄 Mixed feature types *(numeric, ordinal, nominal)*
 
 ---
 
@@ -100,7 +100,8 @@ using **health, lifestyle, and medical attributes**.
 
 ## 🧠 Machine Learning Objective
 
-**Task Type:** 🧠 Classification
+**Task Type:** 🧠 Classification  
+**Model Focus:** 🌳 **Building a Decision Tree Model**
 
 ### 🔮 Prediction Output
 - `0` → 🟢 Healthy  
@@ -114,7 +115,7 @@ using **health, lifestyle, and medical attributes**.
 
 ---
 
-## 🔄 End-to-End Workflow
+## 🔄 End-to-End Workflow (Step-by-Step)
 
 ### 📥 Step 1: Data Ingestion
 - 📂 Load dataset  
@@ -138,7 +139,7 @@ using **health, lifestyle, and medical attributes**.
 
 ### 🧹 Step 3: Data Cleaning
 - ❌ Convert negative ages → `NaN`  
-- 🚫 Remove impossible values (BMI ≤ 0, invalid sleep hours)  
+- 🚫 Remove impossible values *(BMI ≤ 0, invalid sleep hours)*  
 - 🛠️ Handle missing values:
   - **Numerical:** Median  
   - **Ordinal:** Mode  
@@ -147,7 +148,7 @@ using **health, lifestyle, and medical attributes**.
 ---
 
 ### 🏗️ Step 4: Feature Engineering
-- 🔢 Preserve ordinal order (0 < 1 < 2)  
+- 🔢 Preserve ordinal order *(0 < 1 < 2)*  
 - 🧩 One-hot encode nominal features  
 - ✨ Optional domain features:
   - ⚖️ BMI category  
@@ -163,16 +164,15 @@ using **health, lifestyle, and medical attributes**.
 
 ---
 
-### 🌱 Step 6: Baseline Decision Tree
-**Purpose:** 🧪 Establish benchmark performance
-
+### 🌳 Step 6: **Build Baseline Decision Tree Model**
+**Purpose:** 🧪 Establish benchmark performance  
 - Default depth  
 - Fixed random state  
 
 ---
 
-### 🎛️ Step 7: Hyperparameter Tuning
-**Goal:** 🛡️ Control overfitting
+### 🎛️ Step 7: **Tune the Decision Tree Model (Hyperparameters)**
+**Goal:** 🛡️ Control overfitting & improve unhealthy recall
 
 **Parameters Tuned**
 - 🌳 `max_depth`  
@@ -186,7 +186,7 @@ using **health, lifestyle, and medical attributes**.
 
 ---
 
-### 📏 Step 8: Model Evaluation
+### 📏 Step 8: Evaluate the Decision Tree Model
 
 **Technical Metrics**
 - 📉 Confusion Matrix  
@@ -202,7 +202,7 @@ using **health, lifestyle, and medical attributes**.
 
 ---
 
-### 🔍 Step 9: Model Interpretability
+### 🔍 Step 9: Interpret the Decision Tree (Explainability)
 - ⭐ Feature importance ranking  
 - 🌳 Decision Tree visualization  
 - 🗣️ Human-readable IF–THEN rules  
@@ -215,7 +215,7 @@ using **health, lifestyle, and medical attributes**.
 
 ### 🧮 Step 10: Risk Banding & Premium Mapping
 
-**Method:** 📊 Probability-based (Recommended)
+**Method:** 📊 Probability-based *(Recommended)*
 
 | Risk Band | Condition | Action |
 |----------|-----------|--------|
@@ -255,7 +255,7 @@ using **health, lifestyle, and medical attributes**.
 ## 📦 Deliverables
 - 📂 Cleaned dataset  
 - 📊 EDA insights  
-- 🌳 Trained Decision Tree model  
+- 🌳 **Decision Tree model (trained + tuned)**  
 - 📏 Evaluation metrics  
 - 🧠 Interpretable rules  
 - 💸 Risk band & premium mapping  
